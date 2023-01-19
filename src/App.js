@@ -1,26 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
+//import { render } from '@testing-library/react';
+import React, { Component } from 'react';
+//import logo from './logo.svg';
 import './App.css';
+import EventList from './EventList';
+import CitySearch from './CitySearch';
 
-function App() {
+class App extends Component {
+  render() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Really Learn React
-        </a>
-      </header>
+       <CitySearch />
+       <EventList />
     </div>
-  );
+    );
+  }
 }
 
 export default App;
