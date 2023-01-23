@@ -19,7 +19,7 @@ describe('<NumberOfEvents /> component', () => {
         expect(NumberOfEventsWrapper.state("num")).toBe(50);
     });
 
-    /*test("input has value given in the num prop", () => {
+    test("input has value given in the num prop", () => {
         const NumberOfEventsWrapperWithProp = shallow(
             <NumberOfEvents num={20} updateNumberOfEvents={() => {}} />
         );
@@ -32,6 +32,6 @@ describe('<NumberOfEvents /> component', () => {
             target: { value: 15 },
         });
         expect(NumberOfEventsWrapper.state("num")).toBe(15);
-    });*/
+    });
 });
 
