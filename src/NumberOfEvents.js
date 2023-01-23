@@ -7,7 +7,7 @@ class NumberOfEvents extends Component {
       this.setState({ num: this.props.noe || 50 });
     }
   
-    changeNUM(value) {
+    changeNum(value) {
       this.setState({ num: value })
     }
   
@@ -21,7 +21,7 @@ class NumberOfEvents extends Component {
             type="number"
             value={num}
             onChange={event => {
-              this.changeNUM(event.target.value);
+              this.changeNum(event.target.value);
             }}
           >
           </input>
