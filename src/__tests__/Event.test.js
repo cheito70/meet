@@ -15,7 +15,7 @@ describe( '<Event /> component', () => {
     });
 
     test('renders the summary in an h3 tag', () => {
-        const summary = EventWrapper.find('h3.summary');
+        const summary = EventWrapper.find('h2.summary');
 
         expect(summary).toHaveLength(1);
         expect(summary.text()).toBe(event.summary);

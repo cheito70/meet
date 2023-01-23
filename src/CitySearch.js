@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { mockData } from './mock-data';
+import { extractLocations } from './api';
 
 class CitySearch extends Component {
 state = {
@@ -10,6 +12,7 @@ state = {
 
     handleInputChanged = (event) => {
         const value = event.target.value;
+        const locations = extractLocations(mockData);
         const suggestions = this.props.locations.filter
         ((location) => {
             return location.toUpperCase().indexOf(value.toUpperCase()) > -1;
