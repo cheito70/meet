@@ -19,12 +19,18 @@ class Event extends Component {
             <p className="event-start">
                 {new Date(event.start.dateTime).toString()}
             </p>
-            <p className="event-location">{`@${event.summary} | ${event.location}`}</p>
+            <p className="event-location">
+            {`@${event.summary} | ${event.location}`}
+            </p>
             
             {!collapsed && (
                 <div className="event-details">
                     <h3 className="about">About event:</h3>
-                    <a className="link" href={event.htmlLink}>
+                    <a className="link" 
+                        href={event.htmlLink}
+                        target="_blank"
+                        rel="noopener noreferrer"                      
+                        >
                         See details on Google Calendar
                     </a>
                     <p className="description">{event.description}</p>
